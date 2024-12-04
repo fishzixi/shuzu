@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="index.html">index
+    </a>
+    <p>7、将数组 ['red', 'green', 'blue', 'yellow', 'purple'] 
+        的内容反过来存放要求：两种方法</p>
+</body>
+<script>
+    // var arr = ['red', 'green', 'blue', 'yellow', 'purple'];
+    // arr.reverse();
+    // console.log(arr);
+
+    var arr = ['red', 'green', 'blue', 'yellow', 'purple'];
+    var arr2=[];
+    for (i=arr.length-1;i>=0;i--){
+        arr2.push(arr[i])
+    }
+    console.log(arr2);
+
+</script>
+</html>

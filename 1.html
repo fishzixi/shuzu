@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        1、买面包
+一个面包5元钱，客户可以买整数个面包，封装一个函数，客户
+输入钱数和个数，点击找钱按钮，弹出应找多少钱
+    </p>
+</body>
+<script>
+    var a = Number(prompt('你要买几个面包'));
+    var b =Number(prompt('你给了多少钱'));
+    var money = returnmoney(a,b);
+    if(money>=0){
+         alert('补你'+money+"块钱");
+    }else{
+        alert('小子你还要给我'+Math.abs(money)+"块钱，不给挨打")
+    }
+   
+    function returnmoney(x,y) {
+       var retmoney=y-5*x;
+       return retmoney;
+    }
+</script>
+</html>
